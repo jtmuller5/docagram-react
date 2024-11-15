@@ -1,10 +1,18 @@
 {
-    "version": "1.0.0",
-    "manifest_version": 3,
-    "name": "Docagram",
-    "description": "Visualize everything with built-in AI",
-    "action": {
-        "default_popup": "js/index.html",
-        "default_title": "Docagram"
-    }
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "Docagram",
+  "description": "Visualize everything with built-in AI",
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "options_page": "js/features/options/options.html",
+  "action": {
+    "default_title": "Open Docagram"
+  },
+  "side_panel": {
+    "default_path": "js/features/sidepanel/sidepanel.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  }
 }
