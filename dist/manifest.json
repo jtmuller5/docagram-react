@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "Docagram",
+    "description": "Visualize everything with built-in AI",
+    "action": {
+        "default_popup": "js/index.html",
+        "default_title": "Docagram"
+    }
+}
